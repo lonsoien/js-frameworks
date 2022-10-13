@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import { API_URL } from "../../constants/Api";
 
-function BookList() {
-    const [books, setBooks] = useState([]);
+function BeerList() {
+    const [beers, setBeers] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
    
@@ -14,7 +14,7 @@ function BookList() {
        if (response.ok) {
         const json = await response.json();
         console.log(json);
-        setBooks(json);
+        setBeers(json);
        } else {
         setError("An error occured");
        }
@@ -37,11 +37,11 @@ function BookList() {
    
     return (
      <>
-      {books.map(function (book) {
-       return <div key={book.id}>{book.title}</div>;
+      {beers.map(function (beer) {
+       return <div key={beer.id}>{beer.name}</div>;
       })}
      </>
     );
    }
    
-   export default BookList;
+   export default BeerList;
