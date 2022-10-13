@@ -1,5 +1,5 @@
 import "./App.css";
-import BookList from './components/books/BookList';
+import BeerList from './components/books/BeerList';
 import Layout from './components/layout/Layout';
 
 function App() {
@@ -7,7 +7,7 @@ function App() {
     <>
     <Layout />
     <div>
-    <BookList />
+    <BeerList />
     </div>
     </>
   );

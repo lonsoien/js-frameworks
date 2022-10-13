@@ -38,7 +38,10 @@ function BeerList() {
     return (
      <>
       {beers.map(function (beer) {
-       return <div key={beer.id}>{beer.name}</div>;
+       return <div key={beer.id}>
+        <h3>{beer.name}</h3>
+        <p>{beer.description}</p>
+        </div>;
       })}
      </>
     );
