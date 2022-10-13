@@ -1,0 +1,19 @@
+import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
+
+function BeerItem({ id, name, description }) {
+ return (
+  <Link to={`detail/${id}`}>
+   <h4>{name}</h4>
+   <p>{description}</p>
+  </Link>
+ );
+}
+
+BeerItem.propTypes = {
+ id: PropTypes.number.isRequired,
+ title: PropTypes.string.isRequired,
+ published: PropTypes.string.isRequired,
+};
+
+export default BeerItem;
