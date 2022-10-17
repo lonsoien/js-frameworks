@@ -11,6 +11,9 @@ import Home from '../home/Home';
 import About from '../about/About';
 import Contact from '../contact/Contact';
 import Login from '../login/Login';
+import BeerItem from '../beer/BeerItem';
+
+
 
 function Layout() {
   return (
@@ -40,6 +43,7 @@ function Layout() {
       <Container>
         <Routes>
           <Route path="/" exact element={<Home />} />
+          <Route path="/detail/:id" element= {<BeerItem />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/login" element={<Login />} />

@@ -12,7 +12,7 @@ function BeerDetail() {
  const { id } = useParams();
 
  if (!id) {
-  history.push("/");
+  history.push("/BeerItem");
  }
 
  const url = API_URL + "/" + id;

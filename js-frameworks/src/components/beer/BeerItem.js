@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
-function BeerItem({ id, name, description }) {
+function BeerItem ({ id, name, description }) {
  return (
   <Link to={`detail/${id}`}>
    <h4>{name}</h4>
