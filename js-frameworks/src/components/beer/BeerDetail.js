@@ -3,7 +3,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import { API_URL } from "../../constants/Api";
 
 function BeerDetail() {
- const [beer, setBeer] = useState(null);
+ const [beer, setBeer] = useState([]);
  const [loading, setLoading] = useState(true);
  const [error, setError] = useState(null);
 
@@ -12,7 +12,7 @@ function BeerDetail() {
  const { id } = useParams();
 
  if (!id) {
-  history.push("/BeerItem");
+  history.push("/");
  }
 
  const url = API_URL + "/" + id;
