@@ -38,10 +38,12 @@ function BeerList() {
     }
    
     return (
-      <div className="beers">
+      <div className="beer">
       {beers.map(function (beer) {
        const { id, name, description } = beer;
-       return <BeerItem key={id} id={id} name={name} description={description} />;
+       return (
+       <BeerItem key={id} id={id} name={name} description={description} />
+       );
       })}
      </div>
     );
