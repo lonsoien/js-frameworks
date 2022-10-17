@@ -12,8 +12,8 @@ function BeerItem({ id, name, description }) {
 
 BeerItem.propTypes = {
  id: PropTypes.number.isRequired,
- title: PropTypes.string.isRequired,
- published: PropTypes.string.isRequired,
+ name: PropTypes.string.isRequired,
+ description: PropTypes.string.isRequired,
 };
 
 export default BeerItem;
