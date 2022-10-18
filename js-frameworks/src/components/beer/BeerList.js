@@ -1,8 +1,7 @@
 import { useState, useEffect } from "react";
 import { API_URL } from "../../constants/Api";
-//import BeerItem from "../../components/beer/BeerItem"; 
 import { Link } from "react-router-dom";
-
+import Container from "react-bootstrap/esm/Container";
 
 function BeerList() {
     const [beers, setBeers] = useState([]);
@@ -39,18 +38,15 @@ function BeerList() {
     }
    
     return (
-      <div className="beer">
+      <Container>
       {beers.map(function (beer) {
-       return (
-        <div>
-          <Link to={`detail${beer.id}`}>
-            <h4>{beer.name}</h4>
-            <p>{beer.description}</p>
-          </Link>
-        </div>
-       );
+        return <Link to={`beer${beer.id}`}>
+        <h4>{beer.name}</h4>
+        <p>{beer.description}</p>
+      </Link>
+
       })}
-     </div>
+      </Container>
     );
    }
    

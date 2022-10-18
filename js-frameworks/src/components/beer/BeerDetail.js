@@ -7,7 +7,7 @@ function BeerDetail() {
  const [loading, setLoading] = useState(true);
  const [error, setError] = useState(null);
 
- const history = useNavigate();
+ let history = useNavigate();
  const { id } = useParams();
 
  if (!id) {
@@ -49,7 +49,7 @@ function BeerDetail() {
  }
 
  return (
-  <div className="beer">
+  <div className="beer-detail">
     <h2>{beer.id}</h2>
    <h4>{beer.name}</h4>
    <p>{beer.description}</p>

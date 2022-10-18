@@ -15,6 +15,7 @@ import Contact from './components/contact/Contact';
 import Login from './components/login/Login';
 import BeerDetail from './components/beer/BeerDetail';
 
+
 function App() {
   return (
     <>
@@ -44,7 +45,7 @@ function App() {
     <Container>
         <Routes>
           <Route path="/" exact element={<Home />} />
-          <Route path="/detail/:id" element= {<BeerDetail />} />
+          <Route path="/beer/:id" element= {<BeerDetail />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/login" element={<Login />} />

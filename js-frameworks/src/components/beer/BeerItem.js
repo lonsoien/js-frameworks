@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function BeerItem ({ id, name, description }) {
  return (
-  <Link to={`detail${id}`}>
+  <Link to={`beer/${id}`}>
    <h4>Name: {name}</h4>
    <p>Info: {description}</p>
   </Link>
