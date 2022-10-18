@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { API_URL } from "../../constants/Api";
-import BeerItem from "../../components/beer/BeerItem"; 
+//import BeerItem from "../../components/beer/BeerItem"; 
+import { Link } from "react-router-dom";
 
 
 function BeerList() {
@@ -40,8 +41,14 @@ function BeerList() {
     return (
       <div className="beer">
       {beers.map(function (beer) {
-       const { id, name, description } = beer;
-       return <BeerItem key={id} id={id} name={name} description={description} />;
+       return (
+        <div>
+          <Link to={`detail${beer.id}`}>
+            <h4>{beer.name}</h4>
+            <p>{beer.description}</p>
+          </Link>
+        </div>
+       );
       })}
      </div>
     );

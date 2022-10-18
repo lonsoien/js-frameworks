@@ -8,7 +8,6 @@ function BeerDetail() {
  const [error, setError] = useState(null);
 
  const history = useNavigate();
-
  const { id } = useParams();
 
  if (!id) {
@@ -50,7 +49,8 @@ function BeerDetail() {
  }
 
  return (
-  <div className="beer-detail">
+  <div className="beer">
+    <h2>{beer.id}</h2>
    <h4>{beer.name}</h4>
    <p>{beer.description}</p>
   </div>
