@@ -1,4 +1,4 @@
-import BeerList from '../../components/beer/BeerList';
+import BeerList from "../beer/BeerList";
 import Heading from '../layout/Heading';
 import "../../App.css"; 
 

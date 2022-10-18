@@ -1,26 +1,13 @@
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  NavLink,
-} from 'react-router-dom';
-import Container from 'react-bootstrap/Container';
-import Home from '../home/Home';
-import About from '../about/About';
-import Contact from '../contact/Contact';
-import Login from '../login/Login';
-import BeerItem from '../beer/BeerItem';
-
+import NavLink from 'react-bootstrap/esm/NavLink';
 
 
 function Layout() {
   return (
-    <Router>
       <Navbar bg="dark" variant="dark" expand="lg">
         <NavLink to="/" exact>
-          <Navbar.Brand>React App</Navbar.Brand>
+          <Navbar.Brand>JS Frameworks CA</Navbar.Brand>
         </NavLink>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
@@ -40,16 +27,6 @@ function Layout() {
           </Nav>
         </Navbar.Collapse>
       </Navbar>
-      <Container>
-        <Routes>
-          <Route path="/" exact element={<Home />} />
-          <Route path="/detail/:id" element= {<BeerItem />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/login" element={<Login />} />
-        </Routes>
-      </Container>
-    </Router>
   );
 }
 
