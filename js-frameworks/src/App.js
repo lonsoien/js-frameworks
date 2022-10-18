@@ -16,8 +16,8 @@ import BeerDetail from './components/beer/BeerDetail';
 function App() {
   return (
     <>
-    <Layout />
     <Router>
+      <Layout />
     <Container>
         <Routes>
           <Route path="/" exact element={<Home />} />
