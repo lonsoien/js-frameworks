@@ -3,6 +3,7 @@ import { API_URL } from "../../constants/Api";
 //import { Link } from "react-router-dom";
 import Container from "react-bootstrap/esm/Container";
 import BeerItem from "./BeerItem";
+import Heading from "../layout/Heading";
 
 function BeerList() {
     const [beers, setBeers] = useState([]);
@@ -40,6 +41,7 @@ function BeerList() {
    
     return (
       <Container>
+        <Heading title="Beers for Fans" /> 
       <div className="beers">
   {beers.map(function (beer) {
    const { id, name, description } = beer;

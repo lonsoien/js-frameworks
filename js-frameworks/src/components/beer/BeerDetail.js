@@ -11,10 +11,10 @@ function BeerDetail() {
  const { id } = useParams();
 
  if (!id) {
-  history.push("/beer/");
+  history.push("/beer");
  }
 
- const url = API_URL + "/beer/" + id;
+ const url = API_URL + "/beer" + id;
 
  useEffect(
   function () {
@@ -50,7 +50,6 @@ function BeerDetail() {
 
  return (
   <div className="beer-detail">
-  <h2>{beer.id}</h2>
    <h4>{beer.name}</h4>
    <p>{beer.description}</p>
   </div>
