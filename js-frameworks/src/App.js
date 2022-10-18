@@ -9,11 +9,12 @@ import {
   NavLink,
 } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
-import Home from './components/home/Home';
+//import Home from './components/home/Home';
 import About from './components/about/About';
 import Contact from './components/contact/Contact';
 import Login from './components/login/Login';
 import BeerDetail from './components/beer/BeerDetail';
+import BeerList from "./components/beer/BeerList";
 
 
 function App() {
@@ -44,7 +45,7 @@ function App() {
       </Navbar>
     <Container>
         <Routes>
-          <Route path="/" exact element={<Home />} />
+          <Route path="/" exact element={<BeerList />} />
           <Route path="/beer/:id" element= {<BeerDetail />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
