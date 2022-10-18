@@ -1,6 +1,6 @@
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
-import NavLink from 'react-bootstrap/esm/NavLink';
+import NavLink from 'react-bootstrap/NavLink';
 
 
 function Layout() {
