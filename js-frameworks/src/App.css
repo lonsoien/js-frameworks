@@ -2,3 +2,32 @@
   text-align: center;
 }
 
+form {
+  margin: 2rem;
+  padding: 1rem;
+  background: #ebebeb;
+}
+
+input,
+textarea {
+  display: block;
+  margin-top: 10px;
+  font-size: 1rem;
+  width: 290px;
+  border-radius: 10px;
+}
+
+button {
+  display: block;
+  margin-top: 15px;
+  background-color: pink;
+  width: 90px;
+  border-radius: 15px;
+}
+
+span {
+  color: red;
+  font-size: 0.8em;
+}
+
+
