@@ -4,8 +4,6 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import { useForm } from "react-hook-form";
 
 
-
-
 const schema = yup.object().shape({
     firstname: yup.string().required("Please enter your first name"),
     lastname: yup.string().required("Please enter your last name"),
@@ -34,6 +32,12 @@ function Form() {
 
             <input {...register("email")} />
             {errors.email && <span>{errors.email.message}</span>}
+
+            <select {...register("gender")}>
+              <option value="female">female</option>
+              <option value="male">male</option>
+              <option value="other">other</option>
+            </select>
 
             <textarea {...register("message")} />
             {errors.message && <span>{errors.message.message}</span>}
