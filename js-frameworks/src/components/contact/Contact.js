@@ -5,8 +5,8 @@ import { useForm } from "react-hook-form";
 
 
 const schema = yup.object().shape({
-    firstname: yup.string().required("Please enter your first name"),
-    lastname: yup.string().required("Please enter your last name"),
+    firstname: yup.string().required("Please enter your first name").min(2,"enter valid firstname"),
+    lastname: yup.string().required("Please enter your last name").min(2,"enter valid lastname"),
     email: yup.string().required("Please enter an email address").email("Please enter a valid email address"),
     message: yup.string().required("Please enter your message").min(10, "The message must be at least 10 characters"),
 });
@@ -24,21 +24,24 @@ function Form() {
 
     return (
         <form onSubmit={handleSubmit(onSubmit)}>
+          <h2>Contact Form</h2>
+          <br></br>
+          <p>Firstname:</p>
             <input {...register("firstname")} />
-            {errors.name && <span>{errors.name.message}</span>}
-            
+            {errors.firstname && <span>{errors.firstname.message}</span>}
+            <p>Lastname:</p>
             <input {...register("lastname")} />
-            {errors.name && <span>{errors.name.message}</span>}
-
+            {errors.lastname && <span>{errors.lastname.message}</span>}
+            <p>Email:</p>
             <input {...register("email")} />
             {errors.email && <span>{errors.email.message}</span>}
-
+            <br></br>
             <select {...register("gender")}>
               <option value="female">female</option>
               <option value="male">male</option>
               <option value="other">other</option>
             </select>
-
+            <p>Message:</p>
             <textarea {...register("message")} />
             {errors.message && <span>{errors.message.message}</span>}
 
