@@ -9,7 +9,6 @@ import {
   NavLink,
 } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
-//import Home from './components/home/Home';
 import Admin from './components/admin/Admin';
 import Contact from './components/contact/Contact';
 import Login from './components/login/Login';
@@ -31,9 +30,6 @@ function App() {
             <NavLink to="/" className="nav-link">
               Home
             </NavLink>
-            <NavLink to="/admin" className="nav-link">
-              Admin
-            </NavLink>
             <NavLink to="/contact" className="nav-link">
               Contact
             </NavLink>
@@ -47,9 +43,9 @@ function App() {
         <Routes>
           <Route path="/" exact element={<BeerList />} />
           <Route path="/beer/:id" element= {<BeerDetail />} />
-          <Route path="/admin" element={<Admin />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/admin" element={<Admin />} />
         </Routes>
       </Container>
     </Router>

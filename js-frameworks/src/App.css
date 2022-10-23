@@ -2,6 +2,11 @@
   text-align: center;
 }
 
+.container {
+  max-width: 1000px;
+  margin: 1rem, auto;
+}
+
 form {
   margin: 2rem;
   padding: 1rem;
@@ -32,6 +37,12 @@ button {
 span {
   color: red;
   font-size: 0.8em;
+}
+
+.form-error {
+	background: #fbb;
+	color: darkred;
+	padding: 0.5rem 1rem;
 }
 
 

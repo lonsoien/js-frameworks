@@ -8,6 +8,7 @@ export default function Home() {
     <>
   <Heading title="Beers for Fans" /> 
   <BeerList />
+  <div className="container">Environment: {process.env.NODE_ENV}</div>
   </>
   );
 }

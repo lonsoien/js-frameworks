@@ -1,6 +1,3 @@
-//export default function Heading({ title }) {
-//   return <h1>{title}</h1>;
-//  }
 
 import PropTypes from "prop-types";
 
