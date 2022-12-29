@@ -24,6 +24,3 @@ View live site [here]()
     
    # Summary 
    
-
-
-## Acknowledgements/help/inspirations 
