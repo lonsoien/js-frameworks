@@ -1,12 +1,30 @@
 # JS Frameworks Course Assigment
 
-
-View live site [here]()
+(No live view)
 
 ## Goal
 
+Find an API that returns at least:
+
+   - an array of items
+   - a single item retrieved by a parameter (id, name, slug, etc)
+
+Display at least 2 properties from each result.
+Each result should link to the detail page, passing a parameter in the URL.
+
+Create a contact form with inputs and validation.
+
+Create a form with username/email and password fields. 
+The inputs should have the necessary validation for a login form (not a registration form).
+The form should make a login request to either a Wordpress API with the JWT plugin installed or a Strapi API. If the login is successful redirect the user to the admin route.
+
 ## Brief
 
+Create either a new React or Next.js app in the repo.
+
+For the login functionality, use either a Wordpress installation with the JWT plugin from Module 3 installed, or a Strapi installation. Do not add either of these to your repo. Your API should remain a separate project. The markers will use their own installations when marking.
+
+You can use either a REST or GraphQL API for the API calls.
 
 ## Technologies 
 
