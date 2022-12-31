@@ -29,16 +29,31 @@ You can use either a REST or GraphQL API for the API calls.
 ## Technologies 
 
     - React 18.2.0
-    - React-bootstrap
+    - React-Bootstrap 2.5.0
+    - Axios
+    - Yup 
+    
     
    # Setup 
    - This repository can be cloned to visual code or downladed. 
    To run: 
-   - Run "npm install"
-   - Run "npm run start".
-   - 
+   - npm install
+   - npm run start
+
+ Scripts: 
+ - react-scripts start
+ - react-scripts build
+ - react-scripts test
+ 
    The application will open on port 3000, or you will be asked to open on another port if not available in your terminal.
   
     
    # Summary 
+   
+This assignment in Jasvascript Frameworks was a new and challenging task for me. I didnt understand much of the modules given and struggled a lot to solve the task. I have a lot of errors in this repo, and will later on correct it.
+I didnt get to solve the goals in this assignments as much as I wanted to, and didnt learn much doing at the time. 
+After some tutoring lessons with teacher I feel now more confident to solve the issues with the code. 
+
+# Acknowledges 
+- Teacher at Noroff @Connor (who presented a video explaning the correct code and why my code failed).
    
